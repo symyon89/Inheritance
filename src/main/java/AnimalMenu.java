@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AnimalMenu implements Start {
+public class AnimalMenu implements StartMenu {
     protected Bunny[] bunnyList;
     protected Cat[] catList;
     protected Dog[] dogList;
