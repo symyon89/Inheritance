@@ -1,5 +1,5 @@
 
-public class AnimalsWeightProgram extends AnimalMenu {
+public class AnimalsWeightProgram extends AnimalMenu { // mostenim clasa Animal si clasa Animal meniu si utilizam campurile din acestea
     private int days;
 
 
