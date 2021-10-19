@@ -8,7 +8,6 @@ public abstract class Animal {
     public Animal() {
         System.out.println("Un animal a fost creat !");
     }
-
     public String getName() {
         return name;
     }

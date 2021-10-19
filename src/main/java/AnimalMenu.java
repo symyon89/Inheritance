@@ -10,6 +10,9 @@ public class AnimalMenu {
     public AnimalMenu() {
         System.out.println("Meniul de animale a fost creat");
     }
+    public static void getMethod() {
+        System.out.println("Felicitari tot programul a fost generat");
+    }
 
     public void menu() {
         numberOfBunnyes();
@@ -23,6 +26,7 @@ public class AnimalMenu {
         System.out.println(animalsWeightProgram);
         animalsWeightProgram.start();
         System.out.println(animalsWeightProgram);
+        AnimalMenu.getMethod();
     }
 
     private void setAnimalsProp() {
