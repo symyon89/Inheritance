@@ -8,7 +8,7 @@ public class AnimalMenu {
     protected final Scanner scannerNumber = new Scanner(System.in);
 
     public AnimalMenu() {
-        System.out.println("A fost accesat constructorul animal menu");
+        System.out.println("Meniul de animale a fost creat");
     }
 
     public void menu() {
