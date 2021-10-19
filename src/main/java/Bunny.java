@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Bunny extends Animal {
-    @Override
+    //efectuam override la setType si nu permitem iepuri decat cu tipul wild
     public void setType(String type) {
         if (type.equalsIgnoreCase("wild")) {
             super.setType(type);
@@ -13,7 +13,7 @@ public class Bunny extends Animal {
         }
     }
 
-    @Override
+    //efectuam override la setWeight si nu permitem iepuri greutatea mai mica de 0 kg
     public void setWeight(float weight) {
         if (weight <= 0) {
             System.out.println("Cannot have weight 0");

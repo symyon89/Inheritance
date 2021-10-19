@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Cat extends Animal {
-    @Override
+    //efectuam override la setType si nu permitem pisici decat cu tipul domestic
     public void setType(String type) {
         if(type.equalsIgnoreCase("domestic")) {
             super.setType(type);
@@ -12,7 +12,7 @@ public class Cat extends Animal {
             setType(type);
         }
     }
-    @Override
+    //efectuam override la setWeight si nu permitem pisici greutatea mai mica de 0 kg
     public void setWeight(float weight) {
         if(weight <= 0){
             System.out.println("Cannot have weight 0");

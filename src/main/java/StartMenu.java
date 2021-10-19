@@ -1,3 +1,3 @@
 public interface StartMenu {
-    void menu();
+    void menu(); // efectueeaza un contract ca metoda Animal menu sa contina metoda menu
 }

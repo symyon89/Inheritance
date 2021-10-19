@@ -1,31 +1,40 @@
 import java.util.Scanner;
 
 public class AnimalMenu implements StartMenu {
+    //composition
     protected Bunny[] bunnyList;
     protected Cat[] catList;
     protected Dog[] dogList;
     protected final Scanner scannerText = new Scanner(System.in);
     protected final Scanner scannerNumber = new Scanner(System.in);
 
+    // constructor prin care imi afiseaza cand a fost creat meniul
     public AnimalMenu() {
         System.out.println("Meniul de animale a fost creat");
     }
+    //metoda independenta apelata prin clasa la sfarsitul meniului
     public static void getMethod() {
         System.out.println("Felicitari tot programul a fost generat");
     }
 
     public void menu() {
+        //introducerea animalelor in array
         numberOfBunnyes();
         numberOfCats();
         numberOfDogs();
         setAnimalsProp();
+        // cream un obiect si pasam listele de animale, aici ar fi mers mai bine un constructor parametrizat
         AnimalsWeightProgram animalsWeightProgram = new AnimalsWeightProgram();
         animalsWeightProgram.setBunnyList(bunnyList);
         animalsWeightProgram.setCatList(catList);
         animalsWeightProgram.setDogList(dogList);
+        //afisare animale inainte de inceperea programului de greutate
         System.out.println(animalsWeightProgram);
+        // strat program grutate
         animalsWeightProgram.start();
+        //afisare dupa programul de greutate
         System.out.println(animalsWeightProgram);
+        // apelam metoda statica
         AnimalMenu.getMethod();
     }
 
