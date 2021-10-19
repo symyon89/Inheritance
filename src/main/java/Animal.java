@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String name;
     private String color;
     private float weight;
@@ -6,7 +6,7 @@ public class Animal {
 
 
     public Animal() {
-
+        System.out.println("A fost accesat constructorul animal");
     }
 
     public String getName() {

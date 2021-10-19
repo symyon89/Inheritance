@@ -1,3 +1,4 @@
+import javax.sound.midi.Soundbank;
 import java.util.Scanner;
 
 public class AnimalMenu {
@@ -7,6 +8,9 @@ public class AnimalMenu {
     protected final Scanner scannerText = new Scanner(System.in);
     protected final Scanner scannerNumber = new Scanner(System.in);
 
+    public AnimalMenu() {
+        System.out.println("A fost accesat constructorul animal menu");
+    }
 
     public void menu() {
         numberOfBunnyes();
