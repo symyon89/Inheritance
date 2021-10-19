@@ -2,6 +2,17 @@
 public class AnimalsWeightProgram extends AnimalMenu { // mostenim clasa Animal si clasa Animal meniu si utilizam campurile din acestea
     private int days;
 
+    static{
+        System.out.println("Programul de hranire a fost accesat!"); // metoda statica conform exercitiu
+    }
+    {
+        System.out.println("Programul de hranire a fost accesat din blocul non - static !");// metoda non-statica conform exercitiu
+    }
+
+    public AnimalsWeightProgram() {
+
+        System.out.println("Incepem sa rulam constructorul programul de hranire !!");
+    }
 
     public void start() {
         System.out.println("For how many days do you want to generate weight program ?");
